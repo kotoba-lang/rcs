@@ -1,7 +1,10 @@
 {:paths ["src"]
- :deps {io.github.kotoba-lang/phone {:local/root "../phone"}
-        io.github.kotoba-lang/html  {:local/root "../html"}
-        io.github.kotoba-lang/css   {:local/root "../css"}}
+ :deps {io.github.kotoba-lang/phone {:git/url "https://github.com/kotoba-lang/phone.git"
+                                     :git/sha "4e9e01fb54f3f4f7256634f51eb8f352be7dd98b"}
+        io.github.kotoba-lang/html  {:git/url "https://github.com/kotoba-lang/html.git"
+                                     :git/sha "aa57f2730c87b7c2752151ed1a5f2e402c2ac71e"}
+        io.github.kotoba-lang/css   {:git/url "https://github.com/kotoba-lang/css.git"
+                                     :git/sha "7fc8167c4fb97a92b7c21545e6a92a86cc58a9ca"}}
  :aliases
  {:test {:extra-paths ["test"]
          :extra-deps {io.github.cognitect-labs/test-runner

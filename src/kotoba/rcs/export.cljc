@@ -4,7 +4,7 @@
   Renders chat messages, receipts and capability-discovery records to CSV
   and JSON for audit and downstream reporting. Pure data → text: no
   network."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [kotoba.rcs :as rcs]))
 
 (defn- csv-cell [v]

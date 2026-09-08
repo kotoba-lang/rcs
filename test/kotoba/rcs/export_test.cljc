@@ -1,5 +1,5 @@
 (ns kotoba.rcs.export-test
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is]]
             [kotoba.rcs :as rcs]
             [kotoba.rcs.export :as ex]))

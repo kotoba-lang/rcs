@@ -6,7 +6,7 @@
   recent chat messages and receipts, using kotoba-lang/html + css. Pure
   data → markup: no network. The governor gates provisioning/sending; this
   view only observes."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [html.core :as html]
             [css.core :as css]
             [kotoba.rcs :as rcs]))

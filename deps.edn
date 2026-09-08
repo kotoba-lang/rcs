@@ -1,5 +1,10 @@
 {:paths ["src"]
- :deps {io.github.kotoba-lang/phone {:git/url "https://github.com/kotoba-lang/phone.git"
+ :deps {
+        ;; kotoba.lang.text, not clojure.string. Pinned as an explicit floor:
+        ;; tools.deps takes the NEWEST sha it is shown, so without a floor here
+        ;; this repo silently rides whatever a sibling happens to name.
+        io.github.kotoba-lang/text {:git/sha "73bdb13ae7a3d004b44bca08be03a3191157a38f"}
+       io.github.kotoba-lang/phone {:git/url "https://github.com/kotoba-lang/phone.git"
                                      :git/sha "4e9e01fb54f3f4f7256634f51eb8f352be7dd98b"}
         io.github.kotoba-lang/html  {:git/url "https://github.com/kotoba-lang/html.git"
                                      :git/sha "aa57f2730c87b7c2752151ed1a5f2e402c2ac71e"}
